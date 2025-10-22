@@ -11,9 +11,10 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Chandruthelinesmasher/ci-cd-jenkins-k8s.git'
+                echo "✅ Code checked out automatically from SCM"
             }
         }
+
 
         stage('Build Docker Image') {
             steps {
